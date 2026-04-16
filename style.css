@@ -1,0 +1,122 @@
+/* Import a cleaner, professional font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+    --bg: #0f0f1a;
+    --card: rgba(26, 26, 46, 0.6);
+    --primary: #7f5af0;
+    --accent: #2cb67d;
+    --text-main: #fffffe;
+    --text-dim: #94a1b2;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    /* Subtle Mesh Gradient Background */
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(127, 90, 240, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(44, 182, 125, 0.05) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-main);
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { 
+    background: #24243e; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+/* Premium Glassmorphism Cards */
+.glass-card {
+    background: var(--card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.glass-card:hover {
+    border-color: rgba(127, 90, 240, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Skill Icon Styling */
+.skill-card {
+    @apply glass-card; /* Using tailwind apply if available, or copy styles */
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-card i {
+    color: var(--accent);
+    filter: drop-shadow(0 0 5px rgba(44, 182, 125, 0.3));
+}
+
+/* Navigation Link Underline Effect */
+.nav-link {
+    position: relative;
+    color: var(--text-dim);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-main);
+}
+
+/* Buttons with "Silk" Glow */
+.btn-primary {
+    background: var(--primary);
+    box-shadow: 0 4px 15px rgba(127, 90, 240, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 8px 25px rgba(127, 90, 240, 0.5);
+    transform: scale(1.02);
+}
+
+/* Project Image Overlay */
+.project-card img {
+    filter: saturate(0.8);
+    transition: all 0.5s ease;
+}
+
+.project-card:hover img {
+    filter: saturate(1.2);
+    transform: scale(1.05);
+}
+
+/* Animation for section entry */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
