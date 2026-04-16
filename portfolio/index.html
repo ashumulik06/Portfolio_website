@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-[#0f0f1a] text-white font-sans selection:bg-[#7f5af0] selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#0f0f1a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-[#7f5af0]">ARM</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="nav-link hover:text-[#7f5af0] transition">Home</a>
+                <a href="#about" class="nav-link hover:text-[#7f5af0] transition">About</a>
+                <a href="#skills" class="nav-link hover:text-[#7f5af0] transition">Skills</a>
+                <a href="#projects" class="nav-link hover:text-[#7f5af0] transition">Projects</a>
+                <a href="#contact" class="nav-link hover:text-[#7f5af0] transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Ashuta Mulik</h1>
+                <h3 class="text-3xl md:text-5xl text-gray-400 font-bold mb-6">B.Tech CS Student.</h3>
+                <p class="text-gray-400 max-w-md mb-8 leading-relaxed">
+                    Computer Science student focused on building practical and impactful technology solutions, with a strong interest in real-world problem solving.
+
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="px-6 py-3 bg-[#7f5af0] rounded-lg font-medium hover:bg-[#6b46e5] transition shadow-lg shadow-[#7f5af0]/20">View Projects</a>
+                    <a href="#contact" class="px-6 py-3 border border-[#7f5af0] text-[#7f5af0] rounded-lg font-medium hover:bg-[#7f5af0]/10 transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-[#7f5af0]/30 shadow-2xl">
+                    <img src="assets/images/profile.png.jpeg" alt="Profile" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-[#16162a]">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 flex items-center">
+                    <span class="text-[#7f5af0] mr-4"></span> About Me
+                </h2>
+                <p class="text-gray-400 leading-relaxed text-lg">
+                    I am a second-year Computer Science engineering student focused on software development,Iot and building smart solutions.Good in academics, I enjoy creating practical projects that solve real-world problems.
+
+                </p>
+            </div>
+            <div id="education">
+                <h2 class="text-3xl font-bold mb-8 flex items-center">
+                    <span class="text-[#7f5af0] mr-4"></span> Education
+                </h2>
+                <div class="bg-[#1a1a2e] p-8 rounded-2xl border border-white/5 hover:border-[#7f5af0]/30 transition">
+                    <h4 class="text-[#2cb67d] font-mono mb-2">2021-22</h4>
+                    <h3 class="text-xl font-bold">10th SSC</h3>
+                    <p class="text-gray-400">Percentage-91.20</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-8 rounded-2xl border border-white/5 hover:border-[#7f5af0]/30 transition">
+                    <h4 class="text-[#2cb67d] font-mono mb-2">2023-24</h4>
+                    <h3 class="text-xl font-bold">12th HSC</h3>
+                    <p class="text-gray-400">Percentage-84.67</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-8 rounded-2xl border border-white/5 hover:border-[#7f5af0]/30 transition">
+                    <h3 class="text-xl font-bold">MHT CET PCM</h3>
+                    <p class="text-gray-400">Percentile-95.93</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-8 rounded-2xl border border-white/5 hover:border-[#7f5af0]/30 transition">
+                    <h4 class="text-[#2cb67d] font-mono mb-2">2024 — 2028</h4>
+                    <h3 class="text-xl font-bold">B.Tech Computer Science</h3>
+                    <p class="text-gray-400">Rajarambapu institute of technology,Sakhrale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">SKILLS</h2>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="space-y-4">
+                    <h3 class="text-[#7f5af0] font-mono text-sm uppercase tracking-widest">Programming</h3>
+                    <div class="grid gap-3">
+                        <div class="skill-card"><i data-lucide="code-2"></i> <span>C Language</span></div>
+                        <div class="skill-card"><i data-lucide="coffee"></i> <span>Java</span></div>
+                        <div class="skill-card"><i data-lucide="terminal"></i> <span>Python</span></div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[#7f5af0] font-mono text-sm uppercase tracking-widest">Web Dev</h3>
+                    <div class="grid gap-3">
+                        <div class="skill-card"><i data-lucide="layout"></i> <span>HTML/CSS</span></div>
+                        <div class="skill-card"><i data-lucide="cpu"></i> <span>JavaScript</span></div>
+                        <div class="skill-card"><i data-lucide="box"></i> <span>Bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[#7f5af0] font-mono text-sm uppercase tracking-widest">Database/UI</h3>
+                    <div class="grid gap-3">
+                        <div class="skill-card"><i data-lucide="database"></i> <span>DBMS</span></div>
+                        <div class="skill-card"><i data-lucide="framer"></i> <span>UI/UX Design</span></div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-[#7f5af0] font-mono text-sm uppercase tracking-widest">Tools</h3>
+                    <div class="grid gap-3">
+                        <div class="skill-card"><i data-lucide="file-code"></i> <span>VS Code</span></div>
+                        <div class="skill-card"><i data-lucide="github"></i> <span>GitHub</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-[#16162a]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card group">
+                    <div class="overflow-hidden rounded-xl mb-4 relative">
+                        <img src="assets/images/project1.png.jpeg" alt="Project 1" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-[#7f5af0]/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Smart Rc vehicle for Plant Disease Detection</h3>
+                    <p class="text-gray-400 text-sm">RC-based system for real-time plant disease detection and crop monitoring</p>
+                </div>
+                <div class="project-card group">
+                    <div class="overflow-hidden rounded-xl mb-4 relative">
+                        <img src="assets/images/project2.png.jpeg" alt="Project 2" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-[#7f5af0]/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Smart Refrigerator inventory System</h3>
+                    <p class="text-gray-400 text-sm">Automated system to track food inventory and reduce waste using smart alerts</p>
+                </div>
+                <div class="project-card group">
+                    <div class="overflow-hidden rounded-xl mb-4 relative">
+                        <img src="assets/images/project3.png.png" alt="Project 3" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-[#7f5af0]/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">EduPath JEE</h3>
+                    <p class="text-gray-400 text-sm">Personalized learning platform that tracks progress and optimizes study plans for JEE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Certifications</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-[#1a1a2e] p-6 rounded-xl border border-white/5 text-center">
+                    <h3 class="font-bold mb-4 h-12 flex items-center justify-center">Data Structures & Algorithms</h3>
+                    <button class="view-cert text-[#7f5af0] font-mono text-sm hover:underline" data-img="assets/certificates/cert1.png.jpeg">VIEW CERTIFICATE</button>
+                </div>
+                <div class="bg-[#1a1a2e] p-6 rounded-xl border border-white/5 text-center">
+                    <h3 class="font-bold mb-4 h-12 flex items-center justify-center">Responsive Web Design</h3>
+                    <button class="view-cert text-[#7f5af0] font-mono text-sm hover:underline" data-img="assets/certificates/cert2.png.jpeg">VIEW CERTIFICATE</button>
+                </div>
+                <div class="bg-[#1a1a2e] p-6 rounded-xl border border-white/5 text-center">
+                    <h3 class="font-bold mb-4 h-12 flex items-center justify-center">Data Science for Beginners</h3>
+                    <button class="view-cert text-[#7f5af0] font-mono text-sm hover:underline" data-img="assets/certificates/cert3.png.jpeg">VIEW CERTIFICATE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer id="contact" class="py-24 px-6 border-t border-white/5 bg-[#0f0f1a]">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 tracking-tight">Get In Touch</h2>
+        <p class="text-gray-400 mb-12 max-w-md mx-auto">
+            If you'd like to collaborate or have any questions, my inbox is always open!
+        </p>
+
+        <div class="flex flex-col items-center space-y-8">
+            <a href="mailto:ashumulik06@gmail.com" class="group flex items-center space-x-3 text-2xl font-medium transition-all duration-300 hover:text-[#7f5af0]">
+                <div class="p-3 bg-white/5 rounded-full group-hover:bg-[#7f5af0]/10 transition-colors">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <span>ashumulik41@gmail.com</span>
+            </a>
+
+            <div class="flex items-center space-x-8 pt-4">
+                <a href="https://www.linkedin.com/in/ashuta-mulik-952b15385?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                   target="_blank" 
+                   class="flex items-center space-x-2 text-gray-400 hover:text-[#7f5af0] transition-all">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    <span class="text-lg">LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/ashumulik06" 
+                   target="_blank" 
+                   class="flex items-center space-x-2 text-gray-400 hover:text-[#7f5af0] transition-all">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <span class="text-lg">GitHub</span>
+                </a>
+            </div>
+        </div>
+        
+        <p class="mt-20 text-sm text-gray-600 font-mono">
+            &copy; 2026 Ashuta Mulik. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+    <div id="certModal" class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center p-4">
+        <button id="closeModal" class="absolute top-10 right-10 text-white"><i data-lucide="x-circle" size="40"></i></button>
+        <img id="modalImg" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl">
+    </div>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#7f5af0] p-3 rounded-full hidden shadow-lg hover:scale-110 transition">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
